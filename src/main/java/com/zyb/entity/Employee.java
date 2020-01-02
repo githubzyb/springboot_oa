@@ -1,5 +1,6 @@
 package com.zyb.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 
 /**
@@ -11,6 +12,7 @@ import lombok.Data;
 @Data
 public class Employee {
     //工号
+    @TableId
     private String sn;
     //密码
     private String password;

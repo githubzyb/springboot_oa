@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/mp?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true
+    url: jdbc:mysql://127.0.0.1:3306/oa?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true
     username: root
     password: 123456
 
@@ -11,3 +11,5 @@ logging:
     com.zyb.dao: trace
   pattern:
     console: '%p%m%n'
+server:
+  port: 8088
