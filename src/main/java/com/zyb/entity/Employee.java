@@ -1,5 +1,6 @@
 package com.zyb.entity;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 
@@ -22,4 +23,9 @@ public class Employee {
     private String departmentSn;
     //职位
     private String post;
+    //头像
+    @TableField("headPortrait")
+    private String headPortrait;
+
+
 }
